@@ -24,3 +24,14 @@ Requirements:
 - [] Messages should be real time
 - [] Messages should contain text
 - [] Messages should be persisted in a database
+
+## To-do
+
+- [] read about rails 8 authentication — https://www.bigbinary.com/blog/rails-8-introduces-a-basic-authentication-generator
+- [] brush up on action cable — https://guides.rubyonrails.org/action_cable_overview.html
+- [] build the ui
+- [] generate models
+- [] write tests
+- [] read about kamal 2 — https://kamal-deploy.org
+- [] sign up for hetzner cloud
+- [] deploy
