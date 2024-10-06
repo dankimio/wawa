@@ -16,24 +16,24 @@ Spend approximately 4 hours on this case. It’s perfectly okay to not finish al
 
 Requirements:
 
-- [ ] Users should be able to sign up and be authenticated
-- [ ] Users should have a display name
-- [ ] Users should be able to join and leave chat rooms
+- [x] Users should be able to sign up and be authenticated
+- [x] Users should have a display name
+- [x] Users should be able to join and leave chat rooms
 - [ ] Chat rooms can have many users at a time
-- [ ] Users can send message to chat rooms
+- [x] Users can send message to chat rooms
 - [ ] Messages should be real time
-- [ ] Messages should contain text
-- [ ] Messages should be persisted in a database
+- [x] Messages should contain text
+- [x] Messages should be persisted in a database
 
 ## To-do
 
 - [x] read about rails 8 authentication — https://www.bigbinary.com/blog/rails-8-introduces-a-basic-authentication-generator
-- [ ] brush up on action cable and streams
+- [x] brush up on action cable and streams
 - [x] set up tailwind
-- [ ] build the ui
+- [x] build the ui
 - [x] generate rails auth
-- [ ] display error messages
-- [ ] generate models
+- [x] display error messages
+- [x] generate models
 - [ ] write tests
 - [ ] read about kamal 2 — https://kamal-deploy.org
 - [ ] sign up for hetzner cloud
