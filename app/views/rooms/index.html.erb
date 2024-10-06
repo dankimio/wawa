@@ -10,31 +10,35 @@
       <a href="#" class="text-neutral-900"># team2</a>
     </div>
   </div>
+
   <div class="col-span-10 md:col-span-8 lg:col-span-9">
-    <div class="mb-8 bg-neutral-50 rounded-md flex flex-col justify-center items-center p-8">
-      <p class="mb-4 text-neutral-800">
-        You're viewing #general.
-      </p>
+    <%= turbo_frame_tag :content do %>
+      <div class="mb-8 bg-neutral-50 rounded-md flex flex-col justify-center items-center p-8">
+        <p class="mb-4 text-neutral-800">
+          You're viewing #general.
+        </p>
 
-      <%= link_to "Join room", "#", class: "button button-blue button-small" %>
-    </div>
-    <div class="space-y-2.5">
-      <% 99.times do |i| %>
-        <div class="flex gap-x-3">
-          <div class="bg-neutral-200 rounded w-10 h-10">
-          </div>
+        <%= link_to "Join room", "#", class: "button button-blue button-small" %>
+      </div>
 
-          <div>
-            <div class="space-x-0.5 text-sm">
-              <span class="font-medium">Name</span>
-              <span class="text-neutral-400">9:41 AM</span>
+      <div class="space-y-2.5">
+        <% 99.times do |i| %>
+          <div class="flex gap-x-3">
+            <div class="bg-neutral-200 rounded w-10 h-10">
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+
+            <div>
+              <div class="space-x-0.5 text-sm">
+                <span class="font-medium">Name</span>
+                <span class="text-neutral-400">9:41 AM</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
           </div>
-        </div>
-      <% end %>
-    </div>
+        <% end %>
+      </div>
+    <% end %>
   </div>
 </div>
