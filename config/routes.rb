@@ -17,5 +17,8 @@ Rails.application.routes.draw do
   resource :session
   resources :passwords, param: :token
   resources :users, only: %i[create]
-  resources :rooms, only: %i[index new create show]
+  resources :rooms, only: %i[index new create show] do
+    post "join", on: :member
+    delete "leave", on: :member
+  end
 end
