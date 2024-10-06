@@ -1,6 +1,6 @@
 <h1 class="h1 mb-4">Sign up</h1>
 
-<%= form_with model: @user, url: users_path, scope: "user" do |form| %>
+<%= form_with model: @user do |form| %>
   <div class="mb-4 space-y-2">
     <%= form.label :email, class: "form-label" %>
     <%= form.email_field :email, required: true, autofocus: "true", class: "w-full md:w-auto" %>
