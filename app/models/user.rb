@@ -10,4 +10,14 @@ class User < ApplicationRecord
 
   validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :name, presence: true
+
+  def avatar_color
+    digest = Digest::MD5.hexdigest(name)
+
+    # Use the first 6 characters of the digest as the color code
+    color = "##{digest[0..5]}"
+
+    # Output the color code
+    color
+  end
 end
