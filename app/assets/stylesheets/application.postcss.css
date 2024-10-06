@@ -9,5 +9,5 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply font-sans antialiased;
+  @apply font-sans antialiased text-neutral-900;
 }
