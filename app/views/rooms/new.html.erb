@@ -1,0 +1,10 @@
+<h1 class="h1 mb-4">New room</h1>
+
+<%= form_with model: User.new do |form| %>
+  <div class="mb-4 space-y-2">
+    <%= form.label :name, class: "form-label" %>
+    <%= form.text_field :name, required: true, autocorrect: "off", class: "w-full md:w-auto" %>
+  </div>
+
+  <%= form.submit "Create room", class: "mt-2 button button-large button-blue w-full md:w-auto" %>
+<% end %>
