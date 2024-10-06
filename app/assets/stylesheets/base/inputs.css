@@ -12,7 +12,7 @@
   [type="time"],
   [type="week"],
   textarea {
-    @apply rounded-md shadow-sm border-neutral-300 focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50;
+    @apply rounded-md shadow-sm border-2 border-neutral-200 focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50;
 
     &:disabled {
       @apply bg-neutral-100 text-neutral-500;
@@ -23,8 +23,7 @@
     @apply rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-offset-0 focus:ring-blue-200 focus:ring-opacity-50;
   }
 
-  select,
-  .tom-select .ts-control {
+  select {
     @apply block rounded-md border-neutral-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50;
   }
 }
