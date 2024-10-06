@@ -1,10 +1,10 @@
 class RoomsController < ApplicationController
   def index
-    @rooms = []
+    @rooms = Room.all
   end
 
   def new
-    @room = {}
+    @room = Current.user.rooms.build
   end
 
   def create

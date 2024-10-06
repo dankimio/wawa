@@ -1,6 +1,6 @@
 <h1 class="h1 mb-4">New room</h1>
 
-<%= form_with model: User.new do |form| %>
+<%= form_with model: @room do |form| %>
   <div class="mb-4 space-y-2">
     <%= form.label :name, class: "form-label" %>
     <%= form.text_field :name, required: true, autocorrect: "off", class: "w-full md:w-auto" %>
