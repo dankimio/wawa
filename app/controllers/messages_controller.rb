@@ -4,12 +4,6 @@ class MessagesController < ApplicationController
   def create
     message = @room.messages.build(message_params.merge(user: Current.user))
     message.save!
-
-    # if message.save
-    #   redirect_to @room, notice: "Message sent!"
-    # else
-    #   redirect_to @room, alert: "Message not sent!"
-    # end
   end
 
   private
