@@ -11,7 +11,7 @@
         <p class="text-neutral-800">
           You're viewing
           <span class="font-semibold">
-            #general.
+            #<%= @room.name %>.
           </span>
         </p>
 
@@ -28,14 +28,16 @@
         <% end %>
       </div>
 
-      <div class="mb-6">
-        <%= form_with model: [@room, Message.new], data: { turbo_frame: "content" } do |form| %>
-          <div class="flex gap-x-3">
-            <%= form.text_field :body, class: "flex-1", placeholder: "Write a message..." %>
-            <%= form.submit "Send", class: "button button-blue" %>
-          </div>
-        <% end %>
-      </div>
+      <% if @room.users.include?(Current.user) %>
+        <div class="mb-6">
+          <%= form_with model: [@room, Message.new], data: { turbo_frame: "content" } do |form| %>
+            <div class="flex gap-x-3">
+              <%= form.text_field :body, class: "flex-1", placeholder: "Write a message..." %>
+              <%= form.submit "Send", class: "button button-blue" %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
 
       <div class="space-y-4" id="messages">
         <%= render @room.messages.includes(:user) %>
