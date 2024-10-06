@@ -1,11 +1,16 @@
 <%= turbo_frame_tag "content" do %>
-  <div class="mb-8 bg-neutral-50 rounded-md flex flex-col justify-center items-center p-8">
-    <p class="mb-4 text-neutral-800">
-      You're viewing #general.
-    </p>
+  <% unless @room.users.include?(Current.user) %>
+    <div class="mb-8 bg-neutral-50 rounded-md flex flex-col justify-center items-center p-8">
+      <p class="mb-4 text-neutral-800">
+        You're viewing #general.
+      </p>
 
-    <%= link_to "Join room", "#", class: "button button-blue button-small" %>
-  </div>
+      <%= button_to "Join room",
+        join_room_path(@room),
+        data: { turbo_frame: "content" },
+        class: "button button-blue button-small" %>
+    </div>
+  <% end %>
 
   <div class="space-y-2.5">
     <% 99.times do |i| %>
