@@ -4,11 +4,15 @@
 
   <div>
     <div class="space-x-0.5 text-sm">
-      <span class="font-medium">Name</span>
-      <span class="text-neutral-400">9:41 AM</span>
+      <span class="font-medium">
+        <%= message.user.name %>
+      </span>
+      <span class="text-neutral-400">
+        <%= time_ago_in_words(message.created_at) %> ago
+      </span>
     </div>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <%= message.body %>
     </p>
   </div>
 </div>

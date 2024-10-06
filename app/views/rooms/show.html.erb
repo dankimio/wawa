@@ -37,8 +37,8 @@
         <% end %>
       </div>
 
-      <div class="space-y-2.5" id="messages">
-        <%= render @room.messages %>
+      <div class="space-y-3" id="messages">
+        <%= render @room.messages.includes(:user) %>
       </div>
     <% end %>
   </div>
