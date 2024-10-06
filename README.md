@@ -27,11 +27,12 @@ Requirements:
 
 ## To-do
 
-- [ ] read about rails 8 authentication — https://www.bigbinary.com/blog/rails-8-introduces-a-basic-authentication-generator
+- [x] read about rails 8 authentication — https://www.bigbinary.com/blog/rails-8-introduces-a-basic-authentication-generator
 - [ ] brush up on action cable and streams
-- [ ] set up tailwind
+- [x] set up tailwind
 - [ ] build the ui
-- [ ] generate rails auth
+- [x] generate rails auth
+- [ ] display error messages
 - [ ] generate models
 - [ ] write tests
 - [ ] read about kamal 2 — https://kamal-deploy.org
