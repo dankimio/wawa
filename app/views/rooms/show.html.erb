@@ -13,10 +13,17 @@
           </span>
         </p>
 
-        <%= button_to "Join room",
-          join_room_path(@room),
-          data: { turbo_frame: "content" },
-          class: "button button-blue button-small" %>
+        <% if @room.users.include?(Current.user) %>
+          <%= button_to "Leave room",
+            leave_room_path(@room),
+            data: { turbo_frame: "content" }, method: :delete,
+            class: "button button-red button-small" %>
+        <% else %>
+          <%= button_to "Join room",
+            join_room_path(@room),
+            data: { turbo_frame: "content" },
+            class: "button button-blue button-small" %>
+        <% end %>
       </div>
 
       <div class="space-y-2.5">

@@ -28,6 +28,8 @@ class RoomsController < ApplicationController
   end
 
   def leave
+    @room.users.delete(Current.user) if @room.users.include?(Current.user)
+    redirect_to @room
   end
 
   private
