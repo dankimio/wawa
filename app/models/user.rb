@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :rooms, dependent: :destroy
   has_many :room_users, dependent: :destroy
   has_many :users, through: :room_users
+  has_many :messages, dependent: :destroy
 
   normalizes :email, with: ->(e) { e.strip.downcase }
 
