@@ -35,6 +35,5 @@ Requirements:
 - [x] display error messages
 - [x] generate models
 - [x] write tests
-- [ ] read about kamal 2 — https://kamal-deploy.org
-- [ ] sign up for hetzner cloud
-- [ ] deploy
+- [x] read about kamal 2 — https://kamal-deploy.org
+- [x] deploy
