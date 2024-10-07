@@ -1,6 +1,6 @@
 # wawa fertility
 
-https://github.com/user-attachments/assets/0986a7f6-8a72-4af8-bfa0-9b05b2099b0c
+https://github.com/user-attachments/assets/f22afcbf-57a5-47a6-9525-d58da2a3f98f
 
 - Ruby version: see `.ruby-version`
 - System dependencies: `$ brew install sqlite`
