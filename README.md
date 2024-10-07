@@ -39,3 +39,5 @@ Requirements:
 - [x] write tests
 - [x] read about kamal 2 — https://kamal-deploy.org
 - [x] deploy
+- [ ] configure storage
+- [ ] polish
