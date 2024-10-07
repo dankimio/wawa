@@ -1,11 +1,11 @@
 <%= content_for :title, @room.name %>
 
-<div class="grid grid-cols-12 gap-x-8">
-  <div class="col-span-2 md:col-span-4 lg:col-span-3">
+<div class="grid grid-cols-12 gap-8">
+  <div class="col-span-12 md:col-span-4 lg:col-span-3">
     <%= render "shared/rooms" %>
   </div>
 
-  <div class="col-span-10 md:col-span-8 lg:col-span-9">
+  <div class="col-span-12 md:col-span-8 lg:col-span-9">
     <%= turbo_frame_tag "content" do %>
       <%= turbo_stream_from @room %>
 
@@ -36,7 +36,7 @@
             data: { turbo_frame: "content", controller: "reset-form", action: "turbo:submit-end->reset-form#reset" } do |form|
           %>
             <div class="flex gap-x-3">
-              <%= form.text_field :body, class: "flex-1", placeholder: "Write a message...", data: { reset_form_target: "input" }
+              <%= form.text_field :body, class: "flex-1 w-full", placeholder: "Write a message...", data: { reset_form_target: "input" }
               %>
               <%= form.submit "Send", class: "button button-blue" %>
             </div>
