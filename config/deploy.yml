@@ -2,12 +2,12 @@
 service: wawa
 
 # Name of the container image.
-image: your-user/wawa
+image: dankimio/wawa
 
 # Deploy to these servers.
 servers:
   web:
-    - 192.168.0.1
+    - 95.179.182.101
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -17,13 +17,13 @@ servers:
 # Set ssl: false if using something like Cloudflare to terminate SSL (but keep host!).
 proxy:
   ssl: true
-  host: app.example.com
+  host: wawa.dan.kim
 
 # Credentials for your image host.
 registry:
   # Specify the registry server, if you're not using Docker Hub
   # server: registry.digitalocean.com / ghcr.io / ...
-  username: your-user
+  username: dankimio
 
   # Always use an access token rather than real password when possible.
   password:
@@ -58,12 +58,10 @@ aliases:
   logs: app logs -f
   dbc: app exec --interactive --reuse "bin/rails dbconsole"
 
-
 # Use a persistent storage volume for sqlite database files and local Active Storage files.
 # Recommended to change this to a mounted volume path that is backed up off server.
 volumes:
   - "wawa_storage:/rails/storage"
-
 
 # Bridge fingerprinted assets, like JS and CSS, between versions to avoid
 # hitting 404 on in-flight requests. Combines all files from new and old
@@ -83,7 +81,6 @@ builder:
   # secrets:
   #   - GITHUB_TOKEN
   #   - RAILS_MASTER_KEY
-
 # Use a different ssh user than root
 # ssh:
 #   user: app
