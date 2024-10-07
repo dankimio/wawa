@@ -19,9 +19,9 @@ Requirements:
 - [x] Users should be able to sign up and be authenticated
 - [x] Users should have a display name
 - [x] Users should be able to join and leave chat rooms
-- [ ] Chat rooms can have many users at a time
+- [x] Chat rooms can have many users at a time
 - [x] Users can send message to chat rooms
-- [ ] Messages should be real time
+- [x] Messages should be real time
 - [x] Messages should contain text
 - [x] Messages should be persisted in a database
 
