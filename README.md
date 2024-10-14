@@ -1,4 +1,4 @@
-# wawa fertility
+# wawa chat
 
 https://github.com/user-attachments/assets/f22afcbf-57a5-47a6-9525-d58da2a3f98f
 
@@ -12,9 +12,7 @@ https://github.com/user-attachments/assets/f22afcbf-57a5-47a6-9525-d58da2a3f98f
 
 ## The assignment
 
-Write a basic chat app using the latest version of Rails.
-
-Spend approximately 4 hours on this case. It’s perfectly okay to not finish all the requirements in this time frame, just make sure to focus on the requirements you find the most interesting.
+A basic chat app.
 
 Requirements:
 
@@ -39,5 +37,3 @@ Requirements:
 - [x] write tests
 - [x] read about kamal 2 — https://kamal-deploy.org
 - [x] deploy
-- [ ] configure storage
-- [ ] polish
